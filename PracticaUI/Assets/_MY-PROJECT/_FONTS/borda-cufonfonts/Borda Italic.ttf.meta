@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 2cbc6f4fd55a6e0439b978205b2d05dd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Borda
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a02e264398a1f344eada5ef4de6a4810, type: 3}
+  - {fileID: 12800000, guid: 72e0059a3c73547478ba3cba7776297a, type: 3}
+  - {fileID: 12800000, guid: 430df3b1d7a46d14093320868a03ea8d, type: 3}
+  - {fileID: 12800000, guid: 699d1cbcd0fde65499f847f7f51efc86, type: 3}
+  - {fileID: 12800000, guid: 4018b1fbb99d8fa45a4355b07a3deeae, type: 3}
+  - {fileID: 12800000, guid: 07ab773a5e8cc8147b9f0dd79dfa38bd, type: 3}
+  - {fileID: 12800000, guid: 1b0df4d6b5dcab94798e2b612b3e9056, type: 3}
+  - {fileID: 12800000, guid: 19fe88eed30793449983db3c628d0c5b, type: 3}
+  - {fileID: 12800000, guid: 92b7b3373f0498b40b163b472eb086b5, type: 3}
+  - {fileID: 12800000, guid: 47b296aec024a244f97a54926ede598f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 07ab773a5e8cc8147b9f0dd79dfa38bd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Borda
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a02e264398a1f344eada5ef4de6a4810, type: 3}
+  - {fileID: 12800000, guid: 72e0059a3c73547478ba3cba7776297a, type: 3}
+  - {fileID: 12800000, guid: 430df3b1d7a46d14093320868a03ea8d, type: 3}
+  - {fileID: 12800000, guid: 4018b1fbb99d8fa45a4355b07a3deeae, type: 3}
+  - {fileID: 12800000, guid: 92b7b3373f0498b40b163b472eb086b5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
