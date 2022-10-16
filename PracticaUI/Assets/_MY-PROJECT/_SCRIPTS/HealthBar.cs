@@ -13,6 +13,14 @@ public class HealthBar : MonoBehaviour
     float dmg;
     [SerializeField]
     float health;
+    [SerializeField]
+    float heal;
+    [SerializeField]
+    float maxHealth = 100f;
+    [SerializeField]
+    float lerpTimer;
+    [SerializeField]
+    float chipSpeed = 2f;
 
     [SerializeField]
     Image img;
@@ -28,12 +36,16 @@ public class HealthBar : MonoBehaviour
     {
         //img = GetComponent<Image>();
         //img.fillAmount = .5f;
-        healthBar.maxValue = 100f;
+        health = maxHealth;
+        healthBar.maxValue = maxHealth;
         healthBar.value = healthBar.maxValue;
     }
 
     void Update()
     {
+        health = Mathf.Clamp(health, 0, maxHealth);
+        healthBar.value = health;
+
         healthAmount.text = healthBar.value.ToString("f0");
         
         
@@ -57,12 +69,13 @@ public class HealthBar : MonoBehaviour
     public void AddHealth()
     {
         //img.fillAmount += .1f;
-        healthBar.value += health;
+        healthBar.value += heal;
     }
     public void TakeDamage()
     {
         //img.fillAmount -= .1f;
         healthBar.value -= dmg;
+        lerpTimer = 0f;
         dmgAmount.text = dmg.ToString();
     }
 }
