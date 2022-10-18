@@ -20,6 +20,33 @@ TextureImporter:
   - first:
       213: -3843766659394352228
     second: healthButtons_6
+  - first:
+      213: 5247952363264721301
+    second: healthButtons_3
+  - first:
+      213: 4741507044976088103
+    second: healthButtons_7
+  - first:
+      213: 2444426131501462514
+    second: healthButtons_8
+  - first:
+      213: 8767236124487217743
+    second: healthButtons_9
+  - first:
+      213: -3280785786278514752
+    second: healthButtons_10
+  - first:
+      213: 8128762909784662850
+    second: healthButtons_11
+  - first:
+      213: -6246681123891149140
+    second: healthButtons_12
+  - first:
+      213: -8824903997836633779
+    second: healthButtons_13
+  - first:
+      213: -6451871892537546976
+    second: healthButtons_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,7 +156,7 @@ TextureImporter:
         width: 296
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,7 +177,7 @@ TextureImporter:
         width: 289
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,7 +198,7 @@ TextureImporter:
         width: 330
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,7 +219,7 @@ TextureImporter:
         width: 108
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,7 +240,7 @@ TextureImporter:
         width: 289
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,7 +261,7 @@ TextureImporter:
         width: 330
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -242,6 +269,195 @@ TextureImporter:
       bones: []
       spriteID: c9b4f43a69238aac0800000000000000
       internalID: -3843766659394352228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 465
+        width: 568
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591c09a9ed874d840800000000000000
+      internalID: 5247952363264721301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 440
+        width: 568
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724dfcb29873dc140800000000000000
+      internalID: 4741507044976088103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_8
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 360
+        width: 124
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3b3df8d985ce120800000000000000
+      internalID: 2444426131501462514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_9
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 360
+        width: 124
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42780eedca7ba970800000000000000
+      internalID: 8767236124487217743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_10
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 286
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfe7b0b5be4872d0800000000000000
+      internalID: -3280785786278514752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_11
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 312
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243e5156cca2fc070800000000000000
+      internalID: 8128762909784662850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca684593d945f49a0800000000000000
+      internalID: -6246681123891149140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_13
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49d5000294a78580800000000000000
+      internalID: -8824903997836633779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: healthButtons_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 178
+        width: 97
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027e8fc72b85676a0800000000000000
+      internalID: -6451871892537546976
       vertices: []
       indices: 
       edges: []
