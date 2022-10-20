@@ -6,22 +6,27 @@ using TMPro;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField]
-    float timer = 0f;
-
-    [SerializeField]
-    float dmg;
+    #region Health
     [SerializeField]
     float health;
     [SerializeField]
     float heal;
     [SerializeField]
-    float maxHealth = 100f;
-    [SerializeField]
-    float lerpTimer;
-    [SerializeField]
-    float chipSpeed = 2f;
+    float MAX_HEALTH = 100f;
 
+    #endregion
+    #region Damage
+    [SerializeField]
+    float dmg;
+
+    #endregion
+    #region Timers
+    [SerializeField]
+    float timer = 0f;
+
+    #endregion
+
+    #region UI
     [SerializeField]
     Image img;
     [SerializeField]
@@ -31,24 +36,25 @@ public class HealthBar : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI dmgAmount;
 
+    #endregion
     // Start is called before the first frame update
     void Start()
     {
-        //img = GetComponent<Image>();
-        //img.fillAmount = .5f;
-        health = maxHealth;
-        healthBar.maxValue = maxHealth;
+        health = MAX_HEALTH;
+        //health = maxHealth / 2f;
+        healthBar.maxValue = MAX_HEALTH;
         healthBar.value = healthBar.maxValue;
     }
 
     void Update()
     {
-        health = Mathf.Clamp(health, 0, maxHealth);
         healthBar.value = health;
 
         healthAmount.text = healthBar.value.ToString("f0");
-        
-        
+
+        if (health > MAX_HEALTH)
+            health = MAX_HEALTH;
+
         timer += Time.deltaTime;
 
         if(timer >= 2f)
@@ -57,25 +63,25 @@ public class HealthBar : MonoBehaviour
             timer = 0f;
         }
 
+        if (Input.GetKeyDown(KeyCode.A))
+            AddHealth();
+        if (Input.GetKeyDown(KeyCode.S))
+            TakeDamage();
     }
 
     public void DesireHealth(float amount)
     {
-        //img.fillAmount += amount;
-        healthBar.value += amount;
+        health += amount;
     }
 
-    // Update is called once per frame
     public void AddHealth()
     {
-        //img.fillAmount += .1f;
-        healthBar.value += heal;
+        health += heal;
     }
     public void TakeDamage()
     {
-        //img.fillAmount -= .1f;
-        healthBar.value -= dmg;
-        lerpTimer = 0f;
+        Debug.Log("Pulsado");
+        health -= dmg;
         dmgAmount.text = dmg.ToString();
     }
 }

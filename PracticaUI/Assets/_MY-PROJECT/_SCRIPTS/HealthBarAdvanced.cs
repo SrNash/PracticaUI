@@ -21,6 +21,8 @@ public class HealthBarAdvanced : MonoBehaviour
     [SerializeField]
     float heals;
 
+    float timer = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +43,7 @@ public class HealthBarAdvanced : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
             TakeDamage(dmg);
 
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.D))
             AddHealth(heals);
     }
 
