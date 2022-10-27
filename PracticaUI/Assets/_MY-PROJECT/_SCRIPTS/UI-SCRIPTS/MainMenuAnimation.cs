@@ -12,6 +12,8 @@ public class MainMenuAnimation : MonoBehaviour
     float horizontal, vertical, rot;
     [SerializeField]
     float smoothTimer1, smoothTimer2;
+    [SerializeField]
+    GameObject screenOption;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -47,8 +49,16 @@ public class MainMenuAnimation : MonoBehaviour
     {
         LeanTween.rotateY(logoImg, rot, smoothTimer1).setLoopPingPong(-1);
     }
-    void ChangeColor()
-    {
 
+    void CloseMenu()
+    {
+        LeanTween.moveLocalX(container, -horizontal, 1.25f).setOnComplete(ScreenOptionsMenu);
+    }
+
+    public void ScreenOptionsMenu()
+    {
+        LeanTween.moveLocalX(container, horizontal, 1.25f);
+        screenOption.SetActive(true);
+        gameObject.SetActive(false);
     }
 }

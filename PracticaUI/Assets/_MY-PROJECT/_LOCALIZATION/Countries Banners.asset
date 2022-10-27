@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4db626ad063b13545924a9839ac5fa83, type: 3}
+  m_Name: Countries Banners
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 851e4c698c4b94546a0684d0b33d4d3d, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 29361fd2c21fcd2498917b7daf7a4d7c, type: 2}
+  - {fileID: 11400000, guid: fd5f4548696a3f24a86cb9f539ca2922, type: 2}
+  - {fileID: 11400000, guid: 859621040229caf43912ef81c9a919a4, type: 2}
+  - {fileID: 11400000, guid: 574a19a2793e46147aac1b9fdc61210f, type: 2}
+  - {fileID: 11400000, guid: fa4315d4ee7ea8644ae0d1fc124cbf20, type: 2}
+  m_Extensions: []
+  m_Group: Asset Table
+  references:
+    version: 2
+    RefIds: []

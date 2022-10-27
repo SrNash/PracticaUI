@@ -195,7 +195,7 @@ TextureImporter:
       213: 2624622413196648098
     second: TD2_Icons_63
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -216,6 +216,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -254,6 +255,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -281,6 +283,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1648,6 +1662,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TD2_Icons_56: 7797438693666153911
+      TD2_Icons_6: -8044370551448702180
+      TD2_Icons_8: -390869794620472444
+      TD2_Icons_32: 771004717490288362
+      TD2_Icons_21: -6322337012278278773
+      TD2_Icons_39: 2398669030118781093
+      TD2_Icons_45: 3600737821367420614
+      TD2_Icons_47: -2128772894498520219
+      TD2_Icons_12: 7580432988942547390
+      TD2_Icons_61: 9079191817673900697
+      TD2_Icons_18: 2408966533409321255
+      TD2_Icons_63: 2624622413196648098
+      TD2_Icons_5: 4541668026766398863
+      TD2_Icons_48: 7045045360672793856
+      TD2_Icons_0: -6549555267755156831
+      TD2_Icons_30: 5131991610243560927
+      TD2_Icons_35: 6265937782973976055
+      TD2_Icons_24: 7480404120118144516
+      TD2_Icons_43: 6649674887595450078
+      TD2_Icons_50: 5231817079236302698
+      TD2_Icons_10: 7117128556956123730
+      TD2_Icons_4: 2313975034889951031
+      TD2_Icons_37: -2826086996724385880
+      TD2_Icons_62: -3520943037068443372
+      TD2_Icons_59: -2665659833537217615
+      TD2_Icons_7: -5876779092509411382
+      TD2_Icons_60: 7542781327878070612
+      TD2_Icons_9: -494695920021379842
+      TD2_Icons_34: 1566496207442596450
+      TD2_Icons_29: 1090653528058119337
+      TD2_Icons_14: -5244027852884064717
+      TD2_Icons_1: 4477623009867750589
+      TD2_Icons_27: -2385892895289999988
+      TD2_Icons_16: 5604778317980725707
+      TD2_Icons_15: -643226280778828619
+      TD2_Icons_22: 2254167214606490727
+      TD2_Icons_36: 5394180064443253307
+      TD2_Icons_40: 4490908144581148061
+      TD2_Icons_57: -6714574360718977298
+      TD2_Icons_2: -2083523531277204001
+      TD2_Icons_49: -1460823719922478305
+      TD2_Icons_52: 6962865238084507837
+      TD2_Icons_28: -1489004903689896201
+      TD2_Icons_3: -5221997952550575639
+      TD2_Icons_44: -7608222846829454919
+      TD2_Icons_51: -237019259808591567
+      TD2_Icons_54: -397311288702734126
+      TD2_Icons_31: -4770595863325227789
+      TD2_Icons_20: 4734926737129652259
+      TD2_Icons_17: 4137885733166164689
+      TD2_Icons_13: -7582596929498030536
+      TD2_Icons_19: 2775952206988899121
+      TD2_Icons_42: -9181649264504954839
+      TD2_Icons_41: -653352956422179915
+      TD2_Icons_33: 3416250046044170915
+      TD2_Icons_46: -7716350161706138861
+      TD2_Icons_26: 2667278276889586494
+      TD2_Icons_38: 8059079576912877933
+      TD2_Icons_11: -7932438859889549388
+      TD2_Icons_25: 9082213519004187755
+      TD2_Icons_58: 3431163374523501228
+      TD2_Icons_23: 6017736992153900201
+      TD2_Icons_55: -9046694885015204823
+      TD2_Icons_53: -8443306709315013526
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
