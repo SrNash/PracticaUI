@@ -42,6 +42,14 @@ MonoBehaviour:
     m_Localized: Linguaggio
     m_Metadata:
       m_Items: []
+  - m_Id: 170430441709568
+    m_Localized: Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 170767617613824
+    m_Localized: Indietro
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

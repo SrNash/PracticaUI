@@ -33,17 +33,16 @@ public class MainMenuAnimation : MonoBehaviour
     }
     void Introduction()
     {
-        //LeanTween.move(container, firstDir, 1.25f).setOnComplete();
-        LeanTween.moveLocalX(container, horizontal, 1.25f).setOnComplete(FadeIn);
+        LeanTween.moveLocalX(container, horizontal, 3f).setOnComplete(FadeIn);
     }
     void FadeIn()
     {
-        LeanTween.alphaCanvas(logoImg.GetComponent<CanvasGroup>(), 1f, 2.5f);
-        LeanTween.alphaCanvas(titleGImg.GetComponent<CanvasGroup>(), 1f, 3f);
-        LeanTween.alphaCanvas(titleImg.GetComponent<CanvasGroup>(), 1f, 3.25f);
-        LeanTween.alphaCanvas(subtitleImg.GetComponent<CanvasGroup>(), 1f, 3.5f);
-        LeanTween.alphaCanvas(buttonsGrid.GetComponent<CanvasGroup>(), 1f, 3.75f);
-        LeanTween.alphaCanvas(bloodImg.GetComponent<CanvasGroup>(), 1f, 4f).setOnComplete(LogoRotation);
+        LeanTween.alphaCanvas(logoImg.GetComponent<CanvasGroup>(), 1f, 4.5f);
+        LeanTween.alphaCanvas(titleGImg.GetComponent<CanvasGroup>(), 1f, 5f);
+        LeanTween.alphaCanvas(titleImg.GetComponent<CanvasGroup>(), 1f, 5.25f);
+        LeanTween.alphaCanvas(subtitleImg.GetComponent<CanvasGroup>(), 1f, 5.5f);
+        LeanTween.alphaCanvas(buttonsGrid.GetComponent<CanvasGroup>(), 1f, 5.75f);
+        LeanTween.alphaCanvas(bloodImg.GetComponent<CanvasGroup>(), 1f, 6f).setOnComplete(LogoRotation);
     }
     void LogoRotation()
     {
@@ -52,12 +51,16 @@ public class MainMenuAnimation : MonoBehaviour
 
     void CloseMenu()
     {
-        LeanTween.moveLocalX(container, -horizontal, 1.25f).setOnComplete(ScreenOptionsMenu);
+        LeanTween.moveLocalX(container, horizontal, 5f).setOnComplete(ScreenOptionsMenu);
     }
 
     public void ScreenOptionsMenu()
     {
-        LeanTween.moveLocalX(container, horizontal, 1.25f);
+        LeanTween.moveLocalY(container, 1094f, 5f).setOnComplete(EnabledMenuCanvas);
+    }
+
+    void EnabledMenuCanvas()
+    {
         screenOption.SetActive(true);
         gameObject.SetActive(false);
     }

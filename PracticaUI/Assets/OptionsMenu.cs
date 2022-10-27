@@ -6,35 +6,49 @@ using UnityEngine.UI;
 public class OptionsMenu : MonoBehaviour
 {
     [SerializeField]
-    float horizontal;
+    float horizontal, vertical;
     [SerializeField]
-    GameObject flagsGrid, titleOptions, buttonLanguage, container;
+    GameObject container, flagsGrid, titleOptions, buttonLanguage, buttonMusic, buttonBack;
+    [SerializeField]
+    bool openLanguage = false;
 
-    private void OnEnable()
+    private void Start()
     {
-        SelectLanguageOption();
+        LeanTween.alphaCanvas(flagsGrid.GetComponent<CanvasGroup>(), 0f, 0f);
     }
 
-    void Start()
+    void OnEnable()
     {
-        
+        //Cuando esté habilitado comenzaremos la animación
+        OptionsAnimation();
+    }
+     public void OptionsAnimation()
+    {
+        //Animamos el contenedor del menu de opciones
+        LeanTween.moveLocalY(container, vertical, 5f);
+        LeanTween.alphaCanvas(buttonBack.GetComponent<CanvasGroup>(), 1f, 1.5f);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void LanguageOptionAnimationOpen()
     {
-        
+        //Si ya hemos clickeado el Botón de Idiomas o no
+        if (openLanguage)
+        {
+            LeanTween.moveLocalY(buttonMusic, 83.80101f, 2f);
+            LeanTween.alphaCanvas(flagsGrid.GetComponent<CanvasGroup>(), 0f, .35f);
+            openLanguage = false;
+        }//En caso de que no lo hallamos pulsado con anterioridad
+        else if (!openLanguage)
+        {
+            LeanTween.moveLocalY(buttonMusic, 47f, .75f);
+            LeanTween.alphaCanvas(flagsGrid.GetComponent<CanvasGroup>(), 1f, 4f);
+            openLanguage = true;
+        }
     }
 
-    public void SelectLanguageOption()
+
+    void ClickBack()
     {
-        LeanTween.moveLocalX(container, horizontal, 1.25f);
-        //LeanTween.moveLocalX(flagsGrid, horizontal, 1.25f);
-        LeanTween.alphaCanvas(container.GetComponent<CanvasGroup>(), 1f, 1.5f);
-        flagsGrid.SetActive(true);
-        //LeanTween.moveLocalX(titleOptions, horizontal, 1.25f);
-        //LeanTween.alphaCanvas(titleOptions.GetComponent<CanvasGroup>(), 1f, 1.5f);
-        //LeanTween.moveLocalX(buttonLanguage, horizontal, 1.25f);
-        //LeanTween.alphaCanvas(buttonLanguage.GetComponent<CanvasGroup>(), 1f, 1.5f);
+        //Buton para regresar a la pantalla de Menu
     }
 }

@@ -17,7 +17,7 @@ public class ButtonsAnimations : MonoBehaviour
     {
         //LeanTween.color(gameObject, colorHover, 0f);
         LeanTween.value(img.gameObject, setColor, colorDef, colorHover, .25f);
-        LeanTween.scale(gameObject, (Vector3.one + new Vector3(0f, .5f, 0f)), .5f).setEaseSpring();
+        LeanTween.scale(gameObject, (Vector3.one + new Vector3(0f, .125f, 0f)), .5f).setEaseSpring();
     }
     public void ScaleDown()
     {
