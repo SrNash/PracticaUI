@@ -12,6 +12,9 @@ public class OptionsMenu : MonoBehaviour
     [SerializeField]
     bool openLanguage = false;
 
+    [SerializeField]
+    GameObject menuCanvas;
+
     private void Start()
     {
         LeanTween.alphaCanvas(flagsGrid.GetComponent<CanvasGroup>(), 0f, 0f);
@@ -25,7 +28,8 @@ public class OptionsMenu : MonoBehaviour
      public void OptionsAnimation()
     {
         //Animamos el contenedor del menu de opciones
-        LeanTween.moveLocalY(container, vertical, 5f);
+        //LeanTween.moveLocalY(container, vertical, 5f);
+        LeanTween.alphaCanvas(container.GetComponent<CanvasGroup>(), 1f, 5f);
         LeanTween.alphaCanvas(buttonBack.GetComponent<CanvasGroup>(), 1f, 1.5f);
     }
 
@@ -47,8 +51,12 @@ public class OptionsMenu : MonoBehaviour
     }
 
 
-    void ClickBack()
+    public void ClickBack()
     {
         //Buton para regresar a la pantalla de Menu
+        LeanTween.alphaCanvas(container.GetComponent<CanvasGroup>(), 0f, 5f);
+        LeanTween.alphaCanvas(buttonBack.GetComponent<CanvasGroup>(), 0f, 1.5f);
+
+        menuCanvas.GetComponent<MainMenuAnimation>().DisabledMenuCanvas();
     }
 }

@@ -50,6 +50,14 @@ MonoBehaviour:
     m_Localized: "Atr\xE1s"
     m_Metadata:
       m_Items: []
+  - m_Id: 398454666313728
+    m_Localized: Siguiente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400919197401088
+    m_Localized: Anterior
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

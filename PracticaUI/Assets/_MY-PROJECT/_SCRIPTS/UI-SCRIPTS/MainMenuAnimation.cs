@@ -52,16 +52,30 @@ public class MainMenuAnimation : MonoBehaviour
     void CloseMenu()
     {
         LeanTween.moveLocalX(container, horizontal, 5f).setOnComplete(ScreenOptionsMenu);
+        //LeanTween.alphaCanvas(container.GetComponent<CanvasGroup>(), 0f, 1.5f);
     }
 
     public void ScreenOptionsMenu()
     {
-        LeanTween.moveLocalY(container, 1094f, 5f).setOnComplete(EnabledMenuCanvas);
+        //LeanTween.moveLocalY(container, 1094f, 5f).setOnComplete(EnabledMenuCanvas);
+        LeanTween.alphaCanvas(container.GetComponent<CanvasGroup>(), 0f, 1.5f).setOnComplete(EnabledMenuCanvas);
     }
 
     void EnabledMenuCanvas()
     {
         screenOption.SetActive(true);
         gameObject.SetActive(false);
+    }
+    public void DisabledMenuCanvas()
+    {
+        LeanTween.alphaCanvas(container.GetComponent<CanvasGroup>(), 1f, 1.5f);
+        screenOption.SetActive(false);
+        gameObject.SetActive(true);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+        Debug.Log("QUIT");
     }
 }

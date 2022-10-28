@@ -15,16 +15,13 @@ public class ButtonsAnimations : MonoBehaviour
     }
     public void ScaleUp()
     {
-        //LeanTween.color(gameObject, colorHover, 0f);
-        LeanTween.value(img.gameObject, setColor, colorDef, colorHover, .25f);
-        LeanTween.scale(gameObject, (Vector3.one + new Vector3(0f, .125f, 0f)), .5f).setEaseSpring();
+        LeanTween.value(img.gameObject, setColor, colorDef, colorHover, .25f);  //Cambiamos el color del boton
+        LeanTween.scale(gameObject, (Vector3.one + new Vector3(0f, .125f, 0f)), .5f).setEaseSpring();   //Agrandamos el boton
     }
     public void ScaleDown()
     {
-        //LeanTween.color(gameObject, colorDef, 0f);
-        LeanTween.value(img.gameObject, setColor, colorHover, colorDef, .25f);
-        //LeanTween.imageColor();
-        LeanTween.scale(gameObject, Vector3.one, .5f);
+        LeanTween.value(img.gameObject, setColor, colorHover, colorDef, .25f);  //Resetearemos el color del boton
+        LeanTween.scale(gameObject, Vector3.one, .5f);  //Resetearemos el tamaño del boton
     }
 
     void setColor(Color c)
